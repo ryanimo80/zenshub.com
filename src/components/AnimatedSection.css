@@ -1,0 +1,116 @@
+.animated-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animated-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade In Animation */
+.animated-section.fadeIn {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.animated-section.fadeIn.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Slide In Left Animation */
+.animated-section.slideInLeft {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+.animated-section.slideInLeft.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide In Right Animation */
+.animated-section.slideInRight {
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+.animated-section.slideInRight.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide In Up Animation */
+.animated-section.slideInUp {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.animated-section.slideInUp.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Scale In Animation */
+.animated-section.scaleIn {
+  opacity: 0;
+  transform: scale(0.8);
+}
+
+.animated-section.scaleIn.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Staggered animations for child elements */
+.animated-section .stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease-out;
+}
+
+.animated-section.animate .stagger-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animated-section.animate .stagger-item:nth-child(1) { transition-delay: 0.1s; }
+.animated-section.animate .stagger-item:nth-child(2) { transition-delay: 0.2s; }
+.animated-section.animate .stagger-item:nth-child(3) { transition-delay: 0.3s; }
+.animated-section.animate .stagger-item:nth-child(4) { transition-delay: 0.4s; }
+.animated-section.animate .stagger-item:nth-child(5) { transition-delay: 0.5s; }
+.animated-section.animate .stagger-item:nth-child(6) { transition-delay: 0.6s; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .animated-section {
+    transform: translateY(20px);
+  }
+  
+  .animated-section.slideInLeft,
+  .animated-section.slideInRight {
+    transform: translateX(-30px);
+  }
+  
+  .animated-section.slideInRight {
+    transform: translateX(30px);
+  }
+  
+  .animated-section.slideInUp {
+    transform: translateY(30px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animated-section {
+    transition: none;
+  }
+  
+  .animated-section.animate {
+    opacity: 1;
+    transform: none;
+  }
+}
+
