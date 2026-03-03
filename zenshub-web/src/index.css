@@ -1,16 +1,16 @@
 @import "tailwindcss";
 
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 @theme {
-  --color-primary: #0F172A;
-  --color-secondary: #334155;
-  --color-cta: #0369A1;
-  --color-background: #F8FAFC;
-  --color-text-main: #020617;
+  --color-primary: #6366F1;
+  --color-secondary: #818CF8;
+  --color-cta: #10B981;
+  --color-background: #F5F3FF;
+  --color-text-main: #1E1B4B;
   
-  --font-heading: 'Space Grotesk', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 html {
